@@ -29,4 +29,11 @@ gh release create v1.3.0 stream-lab-v1.3.0.apk stream-lab-tv-v1.3.0.apk \
   --notes-file notes.md
 ```
 
-Update `release.json` and this README to match. The phone APK is also published to the in-app updater (`pnpm publish-apk … --channel production --prod` in `services/watch-party`); the TV APK is not, because the updater has one `production` channel for both.
+Update `release.json` and this README to match. Then, from `services/watch-party` in the main Stream Lab repository, offer each APK in the in-app updater. Phone and TV APKs are separate releases:
+
+```bash
+pnpm publish-apk ~/path/to/stream-lab-v1.3.0.apk --channel production --note "What changed" --prod
+pnpm publish-apk ~/path/to/stream-lab-tv-v1.3.0.apk --channel production --note "What changed" --prod
+```
+
+The updater downloads APKs from this repository's releases, so the repository must stay public and released assets must not be replaced or renamed. The script checks the hosted file against the local APK before it publishes. APKs are never uploaded to Convex.
