@@ -5,10 +5,10 @@ Official Android APK releases for Stream Lab, for phones and Android TV.
 ## Current release
 
 - Channel: Production
-- App version: `1.3.0`
-- Release tag: `v1.3.0`
-- Phone APK: `stream-lab-v1.3.0.apk` (version code `24`)
-- Android TV APK: `stream-lab-tv-v1.3.0.apk` (version code `25`)
+- App version: `1.3.1`
+- Release tag: `v1.3.1`
+- Phone APK: `stream-lab-v1.3.1.apk` (version code `30`)
+- Android TV APK: `stream-lab-tv-v1.3.1.apk` (version code `31`)
 
 Download published builds from the [GitHub Releases](https://github.com/Dmartinbz/stream_lab_app/releases) page. APK files belong in GitHub Releases, not in the repository's Git history.
 
